@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblTitle = new Label();
             lblLogin = new Label();
             txtLogin = new TextBox();
             lblPassword = new Label();
@@ -36,33 +35,24 @@
             btnGuest = new Button();
             lblMessage = new Label();
             txtPassword = new TextBox();
+            label1 = new Label();
             SuspendLayout();
-            // 
-            // lblTitle
-            // 
-            lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("Segoe UI", 19F);
-            lblTitle.Location = new Point(127, 9);
-            lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(177, 36);
-            lblTitle.TabIndex = 0;
-            lblTitle.Text = "ООО \"Обувь\"";
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 15F);
-            lblLogin.Location = new Point(170, 60);
+            lblLogin.Location = new Point(169, 30);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(69, 28);
+            lblLogin.Size = new Size(61, 28);
             lblLogin.TabIndex = 1;
-            lblLogin.Text = "Логин";
+            lblLogin.Text = "Login";
             // 
             // txtLogin
             // 
             txtLogin.Location = new Point(157, 103);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(100, 23);
+            txtLogin.Size = new Size(151, 23);
             txtLogin.TabIndex = 2;
             // 
             // lblPassword
@@ -76,9 +66,9 @@
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(107, 230);
+            btnLogin.Location = new Point(88, 230);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(75, 23);
+            btnLogin.Size = new Size(105, 23);
             btnLogin.TabIndex = 4;
             btnLogin.Text = "Войти";
             btnLogin.UseVisualStyleBackColor = true;
@@ -86,9 +76,9 @@
             // 
             // btnGuest
             // 
-            btnGuest.Location = new Point(241, 230);
+            btnGuest.Location = new Point(203, 230);
             btnGuest.Name = "btnGuest";
-            btnGuest.Size = new Size(115, 23);
+            btnGuest.Size = new Size(105, 23);
             btnGuest.TabIndex = 5;
             btnGuest.Text = "Войти как гость";
             btnGuest.UseVisualStyleBackColor = true;
@@ -107,15 +97,26 @@
             // 
             txtPassword.Location = new Point(157, 135);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(100, 23);
+            txtPassword.Size = new Size(151, 23);
             txtPassword.TabIndex = 7;
             txtPassword.UseSystemPasswordChar = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(89, 106);
+            label1.Name = "label1";
+            label1.Size = new Size(41, 15);
+            label1.TabIndex = 8;
+            label1.Text = "Логин";
+            label1.Click += label1_Click;
             // 
             // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(434, 311);
+            Controls.Add(label1);
             Controls.Add(txtPassword);
             Controls.Add(lblMessage);
             Controls.Add(btnGuest);
@@ -123,7 +124,6 @@
             Controls.Add(lblPassword);
             Controls.Add(txtLogin);
             Controls.Add(lblLogin);
-            Controls.Add(lblTitle);
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "\tАвторизация — ООО «Обувь»";
@@ -133,8 +133,6 @@
         }
 
         #endregion
-
-        private Label lblTitle;
         private Label lblLogin;
         private TextBox txtLogin;
         private Label lblPassword;
@@ -142,5 +140,6 @@
         private Button btnGuest;
         private Label lblMessage;
         private TextBox txtPassword;
+        private Label label1;
     }
 }

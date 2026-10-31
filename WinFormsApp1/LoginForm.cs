@@ -42,5 +42,15 @@ namespace WinFormsApp1
                 lblMessage.Text = "не корректные данные!!";
             }
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

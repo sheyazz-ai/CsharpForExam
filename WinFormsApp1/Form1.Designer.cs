@@ -50,7 +50,7 @@
             // 
             // txtName
             // 
-            txtName.Location = new Point(153, 70);
+            txtName.Location = new Point(153, 74);
             txtName.Name = "txtName";
             txtName.PlaceholderText = "Название";
             txtName.Size = new Size(100, 23);
