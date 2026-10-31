@@ -22,20 +22,14 @@ namespace WinFormsApp1
 
         private void btnGuest_Click(object sender, EventArgs e)
         {
-            lblMessage.Text = "Вы вошли как гость";
-            Form1 mainform = new Form1("Guest");
-            mainform.Show();
-            this.Hide();
+           
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtLogin.Text == "admin" && txtPassword.Text == "Admin123")
             {
-                lblMessage.Text = "Вход как админ";
-                Form1 mainform = new Form1("Admin");
-                mainform.Show();
-                this.Hide();
+               
             }
             else
             {

@@ -1,12 +1,24 @@
+using Microsoft.Data.SqlClient;
+using WinFormsApp1.DataAccess;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
-        public Form1(string role)
+
+        public Form1()
         {
+            
             InitializeComponent();
-            userRole = role;
-            lblUserRole.Text = $"Роль: {role}";
+            
+
+            DatabaseConnection db = new DatabaseConnection();
+            using (SqlConnection connection = db.GetSqlConnection())
+            {
+                connection.Open();
+                MessageBox.Show("Подключеие успешно");
+
+            }
         }
 
         private string userRole;
